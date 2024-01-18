@@ -1,0 +1,62 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNyvgXDczePZUyX+uL8hsVr",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/rashi789/rashi/blob/main/reverse%20string\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 16,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Bb2s79i_63Rn",
+        "outputId": "913e13c4-b042-458d-91d9-1bae9fb2b567"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "all the duplicate character in string are:\n"
+          ]
+        }
+      ],
+      "source": [
+        "string=\"my name is rashi\"\n",
+        "print(\"all the duplicate character in string are:\")\n",
+        "for s in range(0,len(string)):\n",
+        "    count=1\n",
+        "for t in range(s+1,len(string)):\n",
+        "  if(string[s]==string[t]and string[s]!=''):\n",
+        "    count=count+1\n",
+        "    string=string[:t]+'0'+string[t+1:]\n",
+        "  if(count>1 and string[s]!='0'):\n",
+        "    print(string[s],\"-\",count)"
+      ]
+    }
+  ]
+}
