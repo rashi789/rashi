@@ -1,0 +1,146 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyObn+FfU1AwWOmB+RpSC7Fx",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/rashi789/rashi/blob/main/Exception\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xjvPPxQ9Y3Ty",
+        "outputId": "bd287218-112e-4932-fd49-45caa2c8cbc8"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n"
+          ]
+        }
+      ],
+      "source": [
+        "x=1\n",
+        "try:\n",
+        "  print(x)\n",
+        "except:\n",
+        "  print(\"an exception occured\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "try:\n",
+        "  print(a)\n",
+        "except:\n",
+        "  print(\"an exception accured\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "150I2nIvZ3jG",
+        "outputId": "4d69d542-b89f-456f-9e5f-b8e9a4e40082"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "an exception accured\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "try:\n",
+        "  x > 3\n",
+        "except:\n",
+        "  print(\"Something went wrong\")\n",
+        "else:\n",
+        "  print(\"Nothing went wrong\")\n",
+        "finally:\n",
+        "  print(\"The try except block is finished\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZkNIu39EaXbb",
+        "outputId": "45e0cf1e-229a-4895-9abb-1bc0338b5b24"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Nothing went wrong\n",
+            "The try except block is finished\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=10\n",
+        "a=int(a)\n",
+        "for i in range(a):\n",
+        "  try:\n",
+        "    if i==5:\n",
+        "      raise Exception(\"wrong number\")\n",
+        "  except Exception as a:\n",
+        "     print(a)\n",
+        "     print(\"error\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yh5GfZCDe6h3",
+        "outputId": "2f726e8b-374e-4a96-c7c8-a6a77ae5662b"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "wrong number\n",
+            "error\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
